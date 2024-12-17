@@ -9,7 +9,6 @@
 -[Version History](#version-history)  
   -[Version 1.0.0](#version-100)  
   -[Version 1.1.1](#version-111)  
--[Data Structure](#data-structure)  
 -[Future Improvements](#future-improvements)
 -[Links](#links)
 
@@ -27,7 +26,7 @@ The project will be upgraded in a modular approach integrating new aspects of th
 
 ## Version History
 
-### Version  1.0.0
+### Version 1.0.0
 
 ### Version 1.1.1
 
