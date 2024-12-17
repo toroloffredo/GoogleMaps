@@ -67,7 +67,6 @@ async function initMap() {
 
         infoWindow.close()
         addMarker(event.latLng);
-       
     });
 
     submitButton.addEventListener("click", function (event) {
@@ -120,7 +119,6 @@ async function initMap() {
       };
    };
      
-
     function geocode(request) {
 //      clearMarkers();
         geocoder
