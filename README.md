@@ -2,15 +2,14 @@
 
 ## Table of Contents  
 
--[Introduction](#introduction)
-
--[Design](#design)  
--[Project Requirements](#project-requirements)  
--[Version History](#version-history)  
-  -[Version 1.0.0](#version-100)  
-  -[Version 1.1.1](#version-111)  
--[Future Improvements](#future-improvements)
--[Links](#links)
+- [Introduction](#introduction)
+- [Design](#design)  
+- [Project Requirements](#project-requirements)  
+- [Version History](#version-history)  
+  - [Version 1.0.0](#version-100)  
+  - [Version 1.1.1](#version-111)  
+- [Future Improvements](#future-improvements)
+- [Links](#links)
 
 ## Introduction  
 
