@@ -7,10 +7,10 @@
 -[Design](#design)  
 -[Project Requirements](#project-requirements)  
 -[Version History](#version-history)  
-  -[Version 1.0.0](#version-100-mvp)  
+  -[Version 1.0.0](#version-100)  
   -[Version 1.1.1](#version-111)  
 -[Data Structure](#data-structure)  
--[Future Improvements](#future-improvements)   
+-[Future Improvements](#future-improvements)
 -[Links](#links)
 
 ## Introduction  
@@ -25,3 +25,12 @@ The project will be upgraded in a modular approach integrating new aspects of th
 
 ## Project Requirements  
 
+## Version History
+
+### Version  1.0.0
+
+### Version 1.1.1
+
+## Future Improvements
+
+## Links
