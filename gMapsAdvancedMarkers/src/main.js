@@ -135,12 +135,13 @@ async function initMap() {
                     const formattedAddress = results[0].formatted_address;
 
                     map.setCenter(location);
+                    addMarker(location)
                     responseDiv.style.display = "block";
                     response.innerText = JSON.stringify(result, null, 2);
 
                     infoWindow.setContent(`
                         <div>           
-                            <p><b>Formatted Address: </b>${formattedAddress}</p>            
+                            <p><b>Address: </b>${formattedAddress}</p>            
                         </div> 
                            ${containerDiv.innerHTML}
                   `);
