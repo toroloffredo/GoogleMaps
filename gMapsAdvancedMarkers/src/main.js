@@ -143,9 +143,10 @@ async function initMap() {
 
                     map.setCenter(location);
                     addMarker(location)
-                    responseDiv.style.display = "block";
-                    response.innerText = JSON.stringify(result, null, 2);
-
+                /* Check if this section is even needed
+                   responseDiv.style.display = "block";
+                   response.innerText = JSON.stringify(result, null, 2);
+                */
                     infoWindow.setContent(`
                         <div>           
                             <p><b>Address: </b>${formattedAddress}</p>            
