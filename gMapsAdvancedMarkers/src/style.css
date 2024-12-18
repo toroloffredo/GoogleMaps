@@ -11,13 +11,14 @@
 
 #sub-title {
     margin: 3px 0 0 17px;
-    padding:
+    padding: 0;
 }
 
 #map {
   height: 90%;
 
 }
+
 html,
 body {
   height: 100%;

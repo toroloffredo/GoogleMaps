@@ -22,6 +22,11 @@ async function initMap() {
     inputText.placeholder = "Enter a location";
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(inputText);
 
+//Details floating frame over map
+    const detailsElement = document.createElement("p");
+    detailsElement.id = "details";
+    detailsElement.innerHTML = "<Strong>API: </Strong> Place holder text that will need to change depending on the API clicked"    
+
 //Geocode Button creation
     const submitButton = document.createElement("input");
     submitButton.type = "button";
