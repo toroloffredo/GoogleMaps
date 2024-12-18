@@ -1,5 +1,17 @@
 #top {
     height: 10%;
+    background-color: #4286e0;
+    color: white;
+}
+
+#main-title {
+    margin: 0 0 5px 5px;
+    padding: 8px 0 0 0;
+}
+
+#sub-title {
+    margin: 3px 0 0 17px;
+    padding:
 }
 
 #map {
