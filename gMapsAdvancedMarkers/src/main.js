@@ -52,7 +52,10 @@ async function initMap() {
     deleteAllButton.classList.add("button-delAll");
     deleteAllButton.value = "Delete Markers";
 
- //Details Window contents   
+ //Details Window contents  
+ //TO DO: make this appear only when the H3s are clicked. But leave details box with instructions to do this. 
+ //Pop up box should behave like response box with the JSOn.  
+
  
     const detailsElement = document.createElement("p");
 
