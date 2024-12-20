@@ -57,12 +57,23 @@ async function initMap() {
  //Pop up box should behave like response box with the JSOn.  
 
     const subTitleJs = document.querySelector(".title-javaScript");
+    let isDetailsJsVisible = false;
+
     subTitleJs.addEventListener("click", () => {
-        const detailsElementJs = document.createElement("p");
-        detailsElementJs.id = "detailsJS";
-        detailsElementJs.innerHTML =
-          "<strong>Details: </strong>For the JS H3 title.";    
-          map.controls[google.maps.ControlPosition.LEFT_TOP].push(detailsElementJs);
+        if (!isDetailsJsVisible){
+            const detailsElementJs = document.createElement("p");
+            detailsElementJs.id = "detailsJS";
+            detailsElementJs.innerHTML =
+              "<strong>Details: </strong>For the JS H3 title.";    
+              map.controls[google.maps.ControlPosition.LEFT_TOP].push(detailsElementJs);
+              isDetailsJsVisible = true
+        } else {
+            detailsJS.remove()
+            isDetailsJsVisible = false
+        }
+       
+        
+       
     });
 
     const subTitleGeo = document.querySelector(".title-geocoding");
