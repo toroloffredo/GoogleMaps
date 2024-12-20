@@ -59,6 +59,9 @@ async function initMap() {
     const subTitleJs = document.querySelector(".title-javaScript");
     let isDetailsJsVisible = false;
 
+    const subTitleGeo = document.querySelector(".title-geocoding");
+    let isDetailsGeoVisible = false;
+
     subTitleJs.addEventListener("click", () => {
         if (!isDetailsJsVisible){
             const detailsElementJs = document.createElement("p");
@@ -67,14 +70,17 @@ async function initMap() {
               "<strong>Details: </strong>For the JS H3 title.";    
               map.controls[google.maps.ControlPosition.LEFT_TOP].push(detailsElementJs);
               isDetailsJsVisible = true
+              
+              if(isDetailsGeoVisible) {
+                detailsGeo.remove()
+                isDetailsGeoVisible = false
+            }
         } else {
             detailsJS.remove()
             isDetailsJsVisible = false
+           
         };
     });
-
-    const subTitleGeo = document.querySelector(".title-geocoding");
-    let isDetailsGeoVisible = false;
 
     subTitleGeo.addEventListener("click", () => {
         if (!isDetailsGeoVisible){
