@@ -56,7 +56,11 @@ async function initMap() {
  //TO DO: make this appear only when the H3s are clicked. But leave details box with instructions to do this. 
  //Pop up box should behave like response box with the JSOn.  
 
- 
+    const subTitleJs = document.getElementsByClassName("title-javaScript");
+    subTitleJs.addEventListener("click", () => {
+
+    });
+    
     const detailsElement = document.createElement("p");
 
     detailsElement.id = "details";
