@@ -1,5 +1,5 @@
-import { geocodingDetailsText } from "./components/geoDetails";
-import { jsDetailsText } from "./components/jsDetails";
+import { geocodingDetailsText } from "./components/geoDetails.js";
+import { jsDetailsText } from "./components/jsDetails.js";
 
 s
 let geocoder,
