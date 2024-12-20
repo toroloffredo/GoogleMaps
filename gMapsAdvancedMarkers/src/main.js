@@ -58,12 +58,20 @@ async function initMap() {
 
     const subTitleJs = document.querySelector(".title-javaScript");
     subTitleJs.addEventListener("click", () => {
-        const detailsElement = document.createElement("p");
+        const detailsElementJs = document.createElement("p");
+        detailsElementJs.id = "detailsJS";
+        detailsElementJs.innerHTML =
+          "<strong>Details: </strong>For the JS H3 title.";    
+          map.controls[google.maps.ControlPosition.LEFT_TOP].push(detailsElementJs);
+    });
 
-        detailsElement.id = "details";
-        detailsElement.innerHTML =
-          "<strong>Details: </strong>For the JS H3 tittle.";    
-          map.controls[google.maps.ControlPosition.LEFT_TOP].push(detailsElement);
+    const subTitleGeo = document.querySelector(".title-geocoding");
+    subTitleGeo.addEventListener("click", () => {
+        const detailsElementGeo = document.createElement("p");
+        detailsElementGeo.id = "detailsGeo";
+        detailsElementGeo.innerHTML =
+          "<strong>Details: </strong>For the Geocoding H3 title.";    
+          map.controls[google.maps.ControlPosition.LEFT_TOP].push(detailsElementGeo);
     });
     
    
