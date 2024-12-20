@@ -70,19 +70,25 @@ async function initMap() {
         } else {
             detailsJS.remove()
             isDetailsJsVisible = false
-        }
-       
-        
-       
+        };
     });
 
     const subTitleGeo = document.querySelector(".title-geocoding");
+    let isDetailsGeoVisible = false;
+
     subTitleGeo.addEventListener("click", () => {
+        if (!isDetailsGeoVisible){
         const detailsElementGeo = document.createElement("p");
         detailsElementGeo.id = "detailsGeo";
         detailsElementGeo.innerHTML =
           "<strong>Details: </strong>For the Geocoding H3 title.";    
           map.controls[google.maps.ControlPosition.LEFT_TOP].push(detailsElementGeo);
+          isDetailsGeoVisible = true
+        } else {
+            detailsGeo.remove()
+            isDetailsGeoVisible = false
+        
+        }
     });
     
    
