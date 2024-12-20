@@ -65,12 +65,12 @@ async function initMap() {
     subTitleJs.addEventListener("click", () => {
         if (!isDetailsJsVisible){
             const detailsElementJs = document.createElement("p");
-            detailsElementJs.id = "detailsJS";
+            detailsElementJs.id = "detailsJs";
             detailsElementJs.innerHTML =
               "<strong>Details: </strong>For the JS H3 title.";    
               map.controls[google.maps.ControlPosition.LEFT_TOP].push(detailsElementJs);
               isDetailsJsVisible = true
-              
+
               if(isDetailsGeoVisible) {
                 detailsGeo.remove()
                 isDetailsGeoVisible = false
@@ -90,6 +90,11 @@ async function initMap() {
           "<strong>Details: </strong>For the Geocoding H3 title.";    
           map.controls[google.maps.ControlPosition.LEFT_TOP].push(detailsElementGeo);
           isDetailsGeoVisible = true
+
+          if(isDetailsJsVisible) {
+            detailsJs.remove()
+            isDetailsJsVisible = false
+        }
         } else {
             detailsGeo.remove()
             isDetailsGeoVisible = false
