@@ -1,3 +1,7 @@
+import { geocodingDetailsText } from "./components/geoDetails";
+import { jsDetailsText } from "./components/jsDetails";
+
+s
 let geocoder,
     responseDiv,
     response,
@@ -66,8 +70,7 @@ async function initMap() {
         if (!isDetailsJsVisible){
             const detailsElementJs = document.createElement("p");
             detailsElementJs.id = "detailsJs";
-            detailsElementJs.innerHTML =
-              "<strong>Details: </strong>For the JS H3 title.";    
+            detailsElementJs.innerHTML = jsDetailsText;    
               map.controls[google.maps.ControlPosition.LEFT_TOP].push(detailsElementJs);
               isDetailsJsVisible = true
 
@@ -86,8 +89,7 @@ async function initMap() {
         if (!isDetailsGeoVisible){
         const detailsElementGeo = document.createElement("p");
         detailsElementGeo.id = "detailsGeo";
-        detailsElementGeo.innerHTML =
-          "<strong>Details: </strong>For the Geocoding H3 title.";    
+        detailsElementGeo.innerHTML = geocodingDetailsText;    
           map.controls[google.maps.ControlPosition.LEFT_TOP].push(detailsElementGeo);
           isDetailsGeoVisible = true
 
