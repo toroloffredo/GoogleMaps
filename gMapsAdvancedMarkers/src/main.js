@@ -56,17 +56,17 @@ async function initMap() {
  //TO DO: make this appear only when the H3s are clicked. But leave details box with instructions to do this. 
  //Pop up box should behave like response box with the JSOn.  
 
-    const subTitleJs = document.getElementsByClassName("title-javaScript");
+    const subTitleJs = document.querySelector(".title-javaScript");
     subTitleJs.addEventListener("click", () => {
+        const detailsElement = document.createElement("p");
 
+        detailsElement.id = "details";
+        detailsElement.innerHTML =
+          "<strong>Details: </strong>For the JS H3 tittle.";    
+          map.controls[google.maps.ControlPosition.LEFT_TOP].push(detailsElement);
     });
     
-    const detailsElement = document.createElement("p");
-
-    detailsElement.id = "details";
-    detailsElement.innerHTML =
-      "<strong>Details: </strong>Enter details later on.";    
-      map.controls[google.maps.ControlPosition.LEFT_TOP].push(detailsElement);
+   
 
 //infoWindow contents
     const containerDiv = document.createElement("div");
